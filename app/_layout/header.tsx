@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MainHeader = () => {
+const Header = () => {
   return (
-    <div>header</div>
+    <div className='py-6 bg-red-100'>Header</div>
   )
 }
 
-export default MainHeader;
+export default Header;
