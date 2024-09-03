@@ -5,11 +5,18 @@ import RouteChange from './_components/route-change-detector'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const generateMetadata = ({props}: {props: any}): Metadata => {
-  return {
-    title: `Next JS 14 app`,
-    description: 'Description'
-  }
+export const generateMetadata = async ({props}: {props: any}): Promise<Metadata> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({
+        title: {
+          default: 'Apothecary',
+          template: '%s | Apothecary'
+        },
+        description: 'Description'
+      });
+    }, 10)
+  })
 }
 
 export default function RootLayout({
@@ -20,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} p-10`}>
-      <RouteChange></RouteChange>
+        <RouteChange></RouteChange>
         {children}
       </body>
     </html>

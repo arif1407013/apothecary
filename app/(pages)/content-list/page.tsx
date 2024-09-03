@@ -30,7 +30,7 @@ const page = () => {
         <div key={`${tada?.id}`}>
           {tada?.title}
           <br />
-          <Link href={`./content-list/${tada?.id}`}>Details</Link>
+          <Link href={`../content-list/${tada?.id}`} replace>Details</Link>
           <Button data={{title: 'Click Here'}}></Button>
         </div>
       ))}
