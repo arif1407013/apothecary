@@ -1,12 +1,12 @@
 "use server"
 
 import Button from "@/app/_components/button";
-import { content } from "@/app/_models/content";
+import { ContentClass } from "@/app/_models/content";
 import Link from "next/link";
 import React from "react";
 
 const page = () => {
-  let contents: content[] = [
+  let contents: ContentClass[] = [
     {
       id: 1,
       title: "Content 1",
@@ -26,7 +26,7 @@ const page = () => {
 
   return (
     <div>
-      {contents.map((tada: content) => (
+      {contents.map((tada: ContentClass) => (
         <div key={`${tada?.id}`}>
           {tada?.title}
           <br />

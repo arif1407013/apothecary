@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './_scss/globals.scss'
 import RouteChange from './_components/route-change-detector'
+import { NextRequest } from 'next/server'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +21,14 @@ export const generateMetadata = async ({props}: {props: any}): Promise<Metadata>
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {
   return (
     <html lang="en">
       <body className={`${inter.className} p-10`}>
-        <RouteChange></RouteChange>
+        {/* <RouteChange></RouteChange> */}
         {children}
       </body>
     </html>

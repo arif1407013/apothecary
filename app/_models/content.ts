@@ -1,5 +1,5 @@
-export interface content{
+export interface ContentClass{
     id: number,
     title: string,
-    description: string
+    description: any
 }

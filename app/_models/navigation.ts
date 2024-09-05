@@ -1,4 +1,4 @@
-export interface navigation{
+export interface NavigationClass{
     id: number,
     title: string,
     route: string

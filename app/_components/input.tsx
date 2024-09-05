@@ -12,7 +12,6 @@ const Input = ({
   value?: string | number;
 }) => {
   const [input, setInput]: [string | number, Function] = useState(value ?? '');
-  console.log('reinitialize', id)
   return (
     <>
       <label htmlFor={id}>{label}</label>

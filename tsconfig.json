@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/gaming/@playground/default.js", "app/(pages)/gaming/@playground/dark-mode/default.js", "app/(pages)/gaming/default.js"],
   "exclude": ["node_modules"]
 }
