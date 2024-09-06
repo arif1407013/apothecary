@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TopCards = () => {
+const TopCards = ({...props}: {[key: string]: any}) => {
   return (
-    <div>TopCards</div>
+    <div {...props}>TopCards</div>
   )
 }
 

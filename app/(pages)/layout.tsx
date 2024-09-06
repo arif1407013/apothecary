@@ -39,6 +39,16 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       title: "Games",
       route: "/gaming",
     },
+    {
+      id: 6,
+      title: "P1",
+      route: "/p1",
+    },
+    {
+      id: 7,
+      title: "P2",
+      route: "/p2",
+    },
   ];
   return (
     <div>

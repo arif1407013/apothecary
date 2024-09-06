@@ -28,13 +28,15 @@ const ControlComp = () => {
   return (
     <div>
       Control Page
+      <div className='grid grid-cols-4 gap-2'>
       {navs.map((tada: ContentClass) => (
-        <div key={tada?.id} className='border-2 border-slate-300 p-2'>
+        <div key={tada?.id} className='border border-slate-300 p-2'>
           <span>{tada?.title}</span>
           {tada?.description}
           <Link href={`/gaming/${tada?.id}`}>link</Link>
         </div>
       ))}
+      </div>
     </div>
   )
 }

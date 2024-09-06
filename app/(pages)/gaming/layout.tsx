@@ -16,9 +16,13 @@ const layout = ({
   return (
     <div>
       {children}
+      <hr />
       {controls}
+      <hr />
       {playground}
+      <hr />
       {scoreboard}
+      <hr />
       {troops}
     </div>
   );

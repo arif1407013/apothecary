@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Banner = () => {
+const Banner = ({...props}: {[key: string]: any}) => {
   return (
-    <div>Banner</div>
+    <div {...props}>Banner</div>
   )
 }
 
