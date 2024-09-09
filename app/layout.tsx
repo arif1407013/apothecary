@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './_scss/globals.scss'
-import RouteChange from './_components/route-change-detector'
-import { NextRequest } from 'next/server'
+import { headers } from "next/headers";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,14 +19,16 @@ export const generateMetadata = async ({props}: {props: any}): Promise<Metadata>
   })
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children
 }: {
   children: React.ReactNode
 }) {
+  const headersList = headers();
   return (
     <html lang="en">
       <body className={`${inter.className} p-10`}>
+        <div>route:{headersList.get("x-pathname")}</div>
         {/* <RouteChange></RouteChange> */}
         {children}
       </body>

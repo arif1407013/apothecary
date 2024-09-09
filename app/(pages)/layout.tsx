@@ -41,13 +41,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     },
     {
       id: 6,
-      title: "P1",
-      route: "/p1",
-    },
-    {
-      id: 7,
-      title: "P2",
-      route: "/p2",
+      title: "Team Profile",
+      route: "/team-profile",
     },
   ];
   return (

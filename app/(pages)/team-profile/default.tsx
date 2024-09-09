@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import TeamProfile from "./page";
 
-const Default = () => {
+const TeamProfileDefault = () => {
   return (
-    <div>Default team profile</div>
-  )
-}
+    <>
+      Team Default
+      <TeamProfile />
+    </>
+  );
+};
 
-export default Default
+export default TeamProfileDefault;
