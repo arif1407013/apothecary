@@ -1,8 +1,11 @@
 import React from 'react'
 
 const page = () => {
+  let teams: any[] = [];
   return (
-    <div>Team Profile</div>
+    <div>
+      Team Profile
+    </div>
   )
 }
 

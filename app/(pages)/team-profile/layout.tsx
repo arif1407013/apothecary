@@ -2,19 +2,19 @@ import React from "react";
 
 const template = ({
   children,
-  members,
-  progress
+  // members,
+  // progress
 }: {
   children: React.ReactNode;
-  members: React.ReactNode;
-  progress: React.ReactDOM
+  // members: React.ReactNode;
+  // progress: React.ReactDOM
 }) => {
   return (
     <>
-      <div>Team Profile Template</div>
+      <div>Team Profile Layout</div>
       {children}
-      {members}
-      {progress}
+      {/* {members}
+      {progress} */}
     </>
   );
 };
